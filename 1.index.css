@@ -1,0 +1,128 @@
+html body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url("backgroundever.jfif");
+    background-repeat: no-repeat;
+    background-size:  100%;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.521);
+    display: grid;
+    grid-template-columns: 33.3vw 34vw 33.3vw;
+    grid-template-rows: 70px 13px 30vh 57vh 80px;
+    grid-template-areas: 
+    "t1 t1 t1"
+    "nd nd nd"
+    "i1 i2 i3"
+    "nth1 nth2 nth3"
+    "down down down"
+}
+/* menu superior */
+.header{
+    box-shadow: 0px 2px 5px black;
+    grid-area: t1;
+    display: flex;
+    float: left;
+    justify-content: space-around;
+}
+.header div{
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+.header div p{
+    margin-left: 5px;
+    display: flex;
+    float: left;
+}
+.header div p a{
+    background-color: rgba(255, 255, 255, 0.226);
+    text-decoration: none;
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+.header div p a:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.658);
+    cursor:pointer;
+    transition-delay: 0.08;
+}
+/* primeira imagem e texto */
+.first-image{
+    margin: auto;
+    grid-area: i1;
+}
+.first-image img{
+    box-shadow: 1px 2px 3px rgba(255, 255, 255, 0.445);
+    border: solid 2px rgb(255, 255, 255);
+    width: 150px; 
+    height: 150px; 
+    border-radius: 1000px;
+}
+.first-image img:hover{
+    width: 200px; 
+    height: 200px; 
+}
+/* segunda imagem */
+.second-image{
+    margin: auto;
+    grid-area: i2;
+}
+.second-image img{
+    box-shadow: 1px 2px 3px rgba(255, 255, 255, 0.445);
+    border: solid 2px rgb(255, 255, 255);
+    width: 150px; 
+    height: 150px; 
+    border-radius: 1000px;
+}
+.second-image img:hover{
+    width: 200px; 
+    height: 200px; 
+}
+/* terceira imagem */
+.third-image{
+    margin: auto;
+    grid-area: i3;
+}
+.third-image img{
+    box-shadow: 1px 2px 3px rgba(255, 255, 255, 0.445);
+    border: solid 2px rgb(255, 255, 255);
+    width: 150px; 
+    height: 150px; 
+    border-radius: 1000px;
+}
+.third-image img:hover{
+    width: 200px; 
+    height: 200px; 
+}
+/* texto central */
+.texto1{
+    grid-area: nth1;
+    text-align: center;
+}
+.texto2{
+    grid-area: nth2;
+    text-align: center;
+}
+.texto3{
+    grid-area: nth3;
+    text-align: center;
+}
+.textos-detalhes{
+    color:rgba(255, 255, 255, 0.637);
+}
+/* footer */
+
+.footer{
+    grid-area: down;
+    display: flex;
+    float: left;
+    justify-content: space-around;
+}
+.footer div{
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 4px;
+    margin: auto;
+}
